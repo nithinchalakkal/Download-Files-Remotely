@@ -24,8 +24,5 @@ Intent intent = new Intent(Intent.ACTION_VIEW);
 					Uri.fromFile(new File(sdcard,
 							"Android/Downloadedfiles/Application.apk")),
 							"application/vnd.android.package-archive");
-							
-							
-
 			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			context.startActivity(intent);
