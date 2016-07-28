@@ -17,13 +17,15 @@ Sometimes you come across a file you want to download but all you've got is your
 
 # Extra Process [install downloaded APK Programmatically]
 
+//Location along with Application name
+
 Intent intent = new Intent(Intent.ACTION_VIEW);
 			intent.setDataAndType(
 					Uri.fromFile(new File(sdcard,
 							"Android/Downloadedfiles/Application.apk")),
 							"application/vnd.android.package-archive");
 							
-							//Location along with Application name
+							
 
 			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			context.startActivity(intent);
